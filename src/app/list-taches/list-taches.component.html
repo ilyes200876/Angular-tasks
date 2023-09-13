@@ -1,1 +1,21 @@
-<p>list-taches works!</p>
+<div class="row">
+  <div class="col-12 col-sm-6" *ngFor="let tache of taches">
+    <div class="card my-2">
+      <div class="card-header">
+        <h3>{{ tache.title }}</h3>
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ tache.created | date:"longDate" }}</h5>
+        <a routerLink="/" class="btn btn-primary">suprimer</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+

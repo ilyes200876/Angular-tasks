@@ -1,1 +1,14 @@
-<p>bitcoin works!</p>
+<div class="row">
+  <div class="col-12 col-sm-6" *ngFor="let bitcoin of bitcoins">
+    <div class="card my-2">
+      <div class="card-header">
+        BITCOINS
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">{{ bitcoin.date | date:"shortDate" }}</h5>
+        <p class="card-text">{{ +bitcoin.priceUsd | number:'1.2-2' }}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
